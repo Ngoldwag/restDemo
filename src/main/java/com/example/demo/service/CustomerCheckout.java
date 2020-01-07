@@ -1,12 +1,13 @@
 package com.example.demo.service;
 
-import com.example.demo.model.Item;
+import com.example.demo.model.*;
 import org.springframework.stereotype.Service;
 
 
 public class CustomerCheckout {
-    private Receipt receipt;
+//    private Receipt receipt;
 
+    private Receipt receipt;
     public CustomerCheckout(String storeName, int storeNumber) {
         receipt = new Receipt();
         receipt.setNumber(storeNumber);

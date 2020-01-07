@@ -1,8 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.model.Item;
-import com.example.demo.model.ItemDetails;
-import com.example.demo.model.Receipt;
+import com.example.demo.model.*;
 import com.example.demo.service.CustomerCheckout;
 import io.swagger.annotations.ApiParam;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
-
 @RequestMapping("/cashRegister/api")
 public class CashRegisterController {
     private static CustomerCheckout customerCheckout;

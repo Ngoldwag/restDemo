@@ -3,13 +3,12 @@ package com.example.demo.model;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import lombok.Getter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @ApiModel
 @Data
-@Getter
 public class Receipt {
     @ApiModelProperty(required = true)
     private String store;
@@ -22,7 +21,7 @@ public class Receipt {
     @ApiModelProperty(required = true, allowableValues = "range(0, infinity]")
     private int totalItems;
     @ApiModelProperty(dataType = " ")
-    private List<Item> itemList;
+    private List<Item> itemList = new ArrayList<>();
 
     public void setStore(String store) {
         this.store = store;
